@@ -19,6 +19,7 @@ class DivisionSeeder extends Seeder
         $faker = Faker::create();
         foreach (range(1,100) as $value) {
             DB::table('division')->insert([
+                // 'id' => $value,
                 'id' => $value,
                 'name' =>  $faker->randomElement(['Bangla', 'English', 'History', 'Mathematics', 'Science', 'Psychology']),
             ]);
